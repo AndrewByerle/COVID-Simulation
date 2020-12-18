@@ -42,11 +42,6 @@ class Cell:
         self.location = location
         self.direction = direction
 
-    # Part 1) Define a method named `tick` with no parameters.
-    # Its purpose is to reassign the object's location attribute
-    # the result of adding the self object's location with its
-    # direction. Hint: Look at the add method.
-
     def tick(self) -> None:
         """Responsible for cell movement."""
         self.location = self.location.add(self.direction)
